@@ -4,16 +4,16 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from '../components/Globals/BackgroundSection'
-import Info from '../components/Info'
+import GreenfeesTable from '../components/GreenfeesTable'
 
-const IndexPage = ({ data }) => (
+const About = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Green Fees" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title='a random golf club'
-      styleClass='default-background' />
-    <Info />
+      title='Green Fees'
+      styleClass='generic-background' />
+    <GreenfeesTable items={data.greenfees} />
   </Layout>
 
 )
@@ -21,14 +21,14 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-  img: file(relativePath: {eq: "hero.jpg"}) {
+  img: file(relativePath: {eq: "greenfees.jpg"}) {
     childImageSharp {
       fluid(quality: 90, maxWidth: 1920) {
         ...GatsbyImageSharpFluid
       }
     }
   },
-  prices: allContentfulPrices {
+  greenfees: allContentfulPrices(sort: {fields: createdAt, order: ASC}) {
     edges {
       node {
         id
@@ -38,6 +38,7 @@ export const query = graphql`
         description {
           description
         }
+        createdAt
       }
     }
   }
@@ -46,4 +47,4 @@ export const query = graphql`
 
 
 
-export default IndexPage
+export default About

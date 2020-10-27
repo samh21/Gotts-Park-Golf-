@@ -13,6 +13,11 @@ export default class Navbar extends Component {
       },
       {
         id: 2,
+        path: "/greenfees",
+        text: "Green Fees",
+      },
+      {
+        id: 3,
         path: "/about",
         text: "About",
       },
@@ -22,13 +27,13 @@ export default class Navbar extends Component {
   navbarHandler = () => {
     this.state.isNavbarOpen
       ? this.setState({
-          isNavbarOpen: false,
-          css: "collapse navbar-collapse",
-        })
+        isNavbarOpen: false,
+        css: "collapse navbar-collapse",
+      })
       : this.setState({
-          isNavbarOpen: true,
-          css: "collapse navbar-collapse show",
-        })
+        isNavbarOpen: true,
+        css: "collapse navbar-collapse show",
+      })
   }
 
   render() {
