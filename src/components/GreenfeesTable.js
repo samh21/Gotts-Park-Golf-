@@ -2,8 +2,6 @@ import React, { useState } from "react"
 import Table from "./Table"
 
 export default function GreenfeesTable({ items }) {
-  const [prices, setPrices] = useState(items)
-
   return (
     <section className="py-5">
       <div className="container">
