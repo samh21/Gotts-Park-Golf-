@@ -13,6 +13,7 @@ export default function GreenfeesTable({ items }) {
                 return edge.node.category === "Day Ticket"
               })}
             />
+            <hr />
             <Table
               title="Season Ticket Prices"
               prices={items.edges.filter(edge => {

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,6 +22,7 @@ const About = ({ data }) => {
           <div className="row">
             <div className="col-sm-12 col-md-8  mx-auto text-center">
               <Table title="Lessons" prices={data.lessons.edges} />
+              <hr />
               <Table title="Junior Lessons" prices={data.juniorLessons.edges} />
 
             </div>

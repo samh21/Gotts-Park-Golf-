@@ -4,6 +4,7 @@
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
+  --mainGreen: rgb(50, 87, 46);
 }
 
 body {
@@ -54,7 +55,7 @@ h6 {
 }
 
 .footer {
-  background: var(--mainBrown);
+  background: var(--mainGreen);
 }
 
 .tr,
@@ -73,4 +74,8 @@ td {
 
 a:hover {
   text-decoration: none;
+}
+
+hr {
+  margin: 3rem 0;
 }

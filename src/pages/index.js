@@ -12,9 +12,9 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title='a random golf club'
+      title='Green lakes golf club'
       styleClass='default-background' />
-    <Info />
+    <Info link={{ to: '/about', title: 'about' }} />
     <Explore data={data} />
   </Layout>
 

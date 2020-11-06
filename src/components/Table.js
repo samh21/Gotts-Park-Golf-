@@ -11,12 +11,12 @@ export default function Table({ title, prices }) {
             const { node } = item
             return (
               <tr key={node.id}>
-                <td>{node.title}</td>
+                <td className='pl-5 text-left' >{node.title}</td>
                 {node.price >= 50 ? (
-                  <td> {highNumber.format(node.price)}</td>
+                  <td className='pr-5 text-right' > {highNumber.format(node.price)}</td>
                 ) : (
-                  <td> {lowNumber.format(node.price)}</td>
-                )}
+                    <td className='pr-5 text-right'> {lowNumber.format(node.price)}</td>
+                  )}
               </tr>
             )
           })}
