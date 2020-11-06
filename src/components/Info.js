@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Title from "../components/Globals/Title"
 
 export default function Info({ link }) {
-  console.log(link)
   return (
     <section className="py-5">
       <div className="container">

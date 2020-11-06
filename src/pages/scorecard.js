@@ -16,8 +16,12 @@ const Scorecard = ({ data }) => {
         title={"Scorecard"}
         styleClass="generic-background"
       />
-      <div style={{ margin: "0 auto", width: "500px" }}>
-        <Img fluid={data.img2.childImageSharp.fluid} objectFit="cover" />
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12 col-md-8  mx-auto">
+            <Img fluid={data.img2.childImageSharp.fluid} />
+          </div>
+        </div>
       </div>
     </Layout>
   )
@@ -27,14 +31,14 @@ export const query = graphql`
   {
     img: file(relativePath: { eq: "scorecard.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
+        fluid(quality: 80, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     img2: file(relativePath: { eq: "scorecard.png" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 500) {
+        fluid(quality: 70, maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }

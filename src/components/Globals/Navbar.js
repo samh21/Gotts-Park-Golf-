@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
+import Icon from '../../images/logo.svg'
 
 export default class Navbar extends Component {
   state = {
@@ -49,8 +50,8 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-sm bg-light navbar-light">
-        <Link to="/" className="navbar-brand">
-          <img src="" alt="Logo" />
+        <Link to="/" >
+          <Icon width='50' height='50' />
         </Link>
         <button
           className="navbar-toggler"
@@ -64,7 +65,7 @@ export default class Navbar extends Component {
             {this.state.links.map(link => {
               return (
                 <li key={link.id} className="nav-item">
-                  <Link to={link.path} className="nav-link  text-capitalize">
+                  <Link to={link.path} className="nav-link  text-capitalize" activeClassName='active' >
                     {link.text}
                   </Link>
                 </li>
