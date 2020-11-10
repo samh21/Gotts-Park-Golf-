@@ -31,14 +31,14 @@ export const query = graphql`
   {
     img: file(relativePath: { eq: "scorecard.jpg" }) {
       childImageSharp {
-        fluid(quality: 80, maxWidth: 1920) {
+        fluid(quality: 60, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     img2: file(relativePath: { eq: "scorecard.png" }) {
       childImageSharp {
-        fluid(quality: 70, maxWidth: 800) {
+        fluid(quality: 60, maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }

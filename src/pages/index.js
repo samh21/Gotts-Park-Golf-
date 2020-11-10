@@ -25,35 +25,35 @@ export const query = graphql`
   {
   img: file(relativePath: {eq: "hero.jpg"}) {
     childImageSharp {
-      fluid(quality: 90, maxWidth: 1920) {
+      fluid(quality: 60, maxWidth: 1920) {
         ...GatsbyImageSharpFluid
       }
     }
   },
   greenfees: file(relativePath: {eq: "greenfees.jpg"}) {
     childImageSharp {
-      fluid(quality: 90, maxWidth: 500) {
+      fluid(quality: 60, maxWidth: 500) {
         ...GatsbyImageSharpFluid
       }
     }
   },
   about: file(relativePath: {eq: "about.jpg"}) {
     childImageSharp {
-      fluid(quality: 90, maxWidth: 500) {
+      fluid(quality: 60, maxWidth: 500) {
         ...GatsbyImageSharpFluid
       }
     }
   },
   scorecard: file(relativePath: {eq: "scorecard.jpg"}) {
     childImageSharp {
-      fluid(quality: 90, maxWidth: 500) {
+      fluid(quality: 60, maxWidth: 500) {
         ...GatsbyImageSharpFluid
       }
     }
   },
   tuition: file(relativePath: {eq: "tuition.jpg"}) {
     childImageSharp {
-      fluid(quality: 90, maxWidth: 500) {
+      fluid(quality: 60, maxWidth: 500) {
         ...GatsbyImageSharpFluid
       }
     }

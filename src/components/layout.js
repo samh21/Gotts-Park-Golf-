@@ -8,20 +8,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import './bootstrap.min.css'
+import "./bootstrap.min.css"
 import "./layout.css"
-import Navbar from './Globals/Navbar'
-import Footer from './Globals/Footer'
+import Navbar from "./Globals/Navbar"
+import Footer from "./Globals/Footer"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="layout">
       <Navbar />
-      {children}
+      <div className="layout-body">{children}</div>
       <Footer />
-    </>
+    </div>
   )
-
 }
 
 Layout.propTypes = {
