@@ -1,5 +1,5 @@
 import React from "react"
-import { link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Img from "gatsby-image"
@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 
 const Scorecard = ({ data }) => {
-  console.log(data.img2)
   return (
     <Layout>
       <SEO title="Scorecard" />

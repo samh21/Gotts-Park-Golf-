@@ -1,4 +1,3 @@
-import { format } from "prettier"
 import React from "react"
 
 export default function Table({ title, prices }) {

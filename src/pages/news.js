@@ -1,11 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import NewsItem from "../components/NewsItem"
-import Info from "../components/Info"
+
 
 
 

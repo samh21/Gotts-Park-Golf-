@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Table from "./Table"
 
 export default function GreenfeesTable({ items }) {

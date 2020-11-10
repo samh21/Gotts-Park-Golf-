@@ -8,16 +8,15 @@ import TuitionInfo from '../components/TuitionInfo'
 import Table from "../components/Table"
 
 const About = ({ data }) => {
-  console.log(data.lessons.edges);
   return (
     < Layout >
       <SEO title="Tuition" />
       <BackgroundSection
         img={data.img.childImageSharp.fluid}
-        title='PGA Professional Golf Tuition'
+        title='PGA Golf Tuition'
         styleClass='generic-background' />
       <TuitionInfo></TuitionInfo>
-      <section className="py-5">
+      <section className="pb-5">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-8  mx-auto text-center">
